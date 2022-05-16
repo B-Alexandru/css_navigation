@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="#">One<span>Tech</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+        <!-- Cards -->
+    <div class="container">
+        <div class="card">
+          <div class="content">
+            <h2>01</h2>
+            <h3>Card One</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et
+              ipsa, totam, ad assumenda voluptatem ratione fugit natus beatae
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2>02</h2>
+            <h3>Card Two</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et
+              ipsa, totam, ad assumenda voluptatem ratione fugit natus beatae
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2>03</h2>
+            <h3>Card Three</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et
+              ipsa, totam, ad assumenda voluptatem ratione fugit natus beatae
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".mobile-nav i").click(function(){
+                $(".site-nav-menu").toggleClass("mobile-menu");
+            });
+        });
+    </script>
+    <script src="tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),
+        {
+            max:25,
+            speed: 400,
+            glare: true,
+            "max-glare":1,
+        });
+    </script>
+    
+</body>
+</html>
